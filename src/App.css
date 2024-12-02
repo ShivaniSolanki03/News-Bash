@@ -1,0 +1,145 @@
+Base styles
+.card-body {
+  background-color: white;
+  color: black;
+}
+
+.card-title, .card-text {
+  color: black;
+}
+
+/* Dark Mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .card-body {
+  background-color: #2a2a2a;  /* Dark background for card text */
+  color: white;  /* White text in dark mode */
+}
+
+.dark-mode .btn-dark {
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+.dark-mode .btn-light {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.dark-mode .btn:hover {
+  background-color: #444;
+}
+
+.dark-mode .card-title, .dark-mode .card-text {
+  color: white;  /* White text in dark mode */
+}
+
+/* Styling for the image container */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 200px; /* Adjust the height to suit your layout */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+/* Overlay for text on image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);  /* Transparent black background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.overlay h5, .overlay p {
+  margin: 0;
+}
+
+/* Dark mode overlay */
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);  /* Darker overlay for dark mode */
+}
+
+.text-light {
+  color: white !important;  /* White text in dark mode */
+}
+
+.text-dark {
+  color: black !important;  /* Black text in light mode */
+}
+
+/* Ensure consistent image sizing across all cards */
+.card {
+  width: 18rem; /* Fixed width for all cards */
+  height: 400px; /* Fixed height for cards */
+}
+
+.card-body {
+  height: 200px; /* Ensure card body height stays consistent */
+  overflow: hidden; /* Prevent overflow if the content is too long */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image fills the container */
+}
+
+/* Button Styling */
+.btn-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Dark mode button styles */
+body.dark-mode .btn-outline-dark {
+  color: #fff;
+  border-color: #fff;
+}
+
+body.dark-mode .btn-outline-dark:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* Add this to your CSS or modify existing ones for better layout handling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Adjust the gap between columns */
+}
+
+.col {
+  flex: 1 0 21%; /* Each column will take at least 21% of the row, adjust as needed */
+  max-width: 25%; /* Max width of each column */
+  box-sizing: border-box;
+}
+/* .card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+} */

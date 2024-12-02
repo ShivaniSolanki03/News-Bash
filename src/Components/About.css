@@ -1,0 +1,86 @@
+/* Default Light Mode Styles */
+.about-container {
+    margin: 3rem 0;
+    text-align: center;
+    background-color: #f4efef; /* Light background color */
+    padding: 2rem; /* Add some padding around the content */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .about-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .about-list li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .about-list li::before {
+    content: "\2022";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .about-contact a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .about-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .about-footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #777777eb;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #121212; /* Dark background for the entire body */
+    color: white; /* Light text color for body */
+  }
+  
+  .about-container.dark-mode {
+    background-color: #2c2c2c; /* Darker background for the container */
+    color: white; /* Ensure text is light on dark background */
+  }
+  
+  .about-title.dark-mode {
+    color: #fff; /* White title text in dark mode */
+  }
+  
+  .about-description.dark-mode {
+    color: #ccc; /* Light text for descriptions */
+  }
+  
+  .about-list li.dark-mode {
+    color: #ccc; /* Light list item text */
+  }
+  
+  .about-list li.dark-mode::before {
+    color: #00bcd4; /* Change the bullet color to a lighter shade */
+  }
+  
+  .about-footer.dark-mode {
+    color: #bbb; /* Lighter footer text for dark mode */
+  }
+  
